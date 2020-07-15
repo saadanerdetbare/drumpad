@@ -1,7 +1,8 @@
 import React from 'react';
 import { Grid, Row, Col } from 'FlexGrid';
-import logo from './logo.svg';
-import './App.css';
+import drums from 'drums';
+import 'App.css';
+
 
 const SomethingWithGrid = () => {
 	return (
@@ -23,26 +24,23 @@ const SomethingWithGrid = () => {
 	)
 }
 
+const Footer = () => {
+	return (
+		<div className="footer">
+			<p>Made with React, much coffee and Stack<strong>overflow</strong></p>
+			<p>freeCodeCamp Drumpad project by Jakob Dahl</p>
+			<p>Code is on <a href="https://github.com/saadanerdetbare/drumpad" target="_blank" rel="noopener noreferrer">github</a></p>
+		</div>
+	)
+}
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-		  </header>
-		  <SomethingWithGrid />
-    </div>
-  );
+	return (
+		<div>
+			<SomethingWithGrid />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
