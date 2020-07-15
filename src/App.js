@@ -1,6 +1,27 @@
 import React from 'react';
+import { Grid, Row, Col } from 'FlexGrid';
 import logo from './logo.svg';
 import './App.css';
+
+const SomethingWithGrid = () => {
+	return (
+		<Grid>
+			<Row>
+				<Col size={1}>
+					<p>noget i en Col</p>
+				</Col>
+			</Row>
+			<Row>
+				<Col size={2}>
+					noget andet i en col
+				</Col>
+				<Col size={1}>
+					ved siden af en col
+				</Col>
+			</Row>
+		</Grid>
+	)
+}
 
 function App() {
   return (
@@ -18,7 +39,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+		  </header>
+		  <SomethingWithGrid />
     </div>
   );
 }
