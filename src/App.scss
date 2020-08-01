@@ -8,13 +8,16 @@
   background-color: #DCDCDC;
   color: black;
   text-align: center;
+
+	p {
+		display: inline-block;
+		padding-right: 1em;
+	}
+	a {
+		color: #B22222;
+	}
 }
 
-.footer p {
-	display: inline-block;
-	padding-right: 1em;
-}
 
-.footer a {
-	color: #B22222;
-}
+
+

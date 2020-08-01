@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'FlexGrid';
 import drums from 'drums';
-import 'App.css';
+import 'App.scss';
 
 
 const SomethingWithGrid = () => {
